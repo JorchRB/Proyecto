@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperatura</title>
+</head>
+<script>
+    function verEstado(){
+        
+    var temperatura= parseInt(document.getElementById("tempID").value);
+    alert(temperatura);
+
+
+    if(temperatura < 0){
+        document.write("Hielo")
+    }else{
+        alert("")
+    }
+    
+}
+    </script>
+<body>
+    Temperatura:<input type="text" id="tempID">
+    <input type="button" value="Ver estado" onclick="verEstado()">
+
+</body>
+</html>
