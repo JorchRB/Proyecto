@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>App2</title>
+</head>
+<body>
+    Edad:<input type="text" id="edad"><br><br>
+    <input type="button" id="ver categoria" onclick="VerCategoria()" value="VerCategoria"><br><br>
+    Ver categoria
+    <script>
+        function VerCategoria(){
+        var edad=parseInt(document.getElementById("edad").value);
+        alert(edad);
+        }
+        if(edad<=7){
+            alert("Eres Benjamin");
+        }else if(edad<=9){
+            aler("Eres Alevin");
+        }else if(edad<=11){
+            alert("Eres Infantil");
+        }else if(edad>=12){
+            alert("Eres Cadete");
+        }
+    </script>
+</body>
+</html>
